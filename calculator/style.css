@@ -1,0 +1,126 @@
+/* Basic page setup */
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4ff;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+/* Main card */
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+  color: #1a1a2e;
+}
+
+.subtitle {
+  color: gray;
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+}
+
+/* Each row: label + input side by side */
+.mark-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.mark-row label {
+  width: 90px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.mark-row input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.mark-row input:focus {
+  border-color: #4f6ef7;
+}
+
+/* Remove the up/down spinner arrows on number inputs */
+.mark-row input::-webkit-outer-spin-button,
+.mark-row input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.mark-row input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Calculate button */
+#calc-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 11px;
+  background: #4f6ef7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#calc-btn:hover {
+  background: #3a56d4;
+}
+
+/* Result box */
+#result-box {
+  margin-top: 24px;
+  background: #f8f9ff;
+  border: 1px solid #dde3ff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#result-box h2 {
+  font-size: 1rem;
+  margin-bottom: 14px;
+  color: #1a1a2e;
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.95rem;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.label { color: gray; }
+
+.value { font-weight: bold; color: #1a1a2e; }
+
+/* Grade badge colours */
+.grade-badge { padding: 2px 14px; border-radius: 20px; }
+.grade-Aplus { background: #d1fae5; color: #065f46; }
+.grade-A     { background: #ccfbf1; color: #0f766e; }
+.grade-Bplus { background: #dbeafe; color: #1d4ed8; }
+.grade-B     { background: #e0e7ff; color: #4338ca; }
+.grade-C     { background: #fef9c3; color: #854d0e; }
+.grade-D     { background: #ffedd5; color: #9a3412; }
+.grade-F     { background: #fee2e2; color: #991b1b; }
+
+.hidden { display: none; }
