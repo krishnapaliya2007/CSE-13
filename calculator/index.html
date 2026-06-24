@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marks Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Marks Calculator</h1>
+    <p class="subtitle">Enter marks out of 100 for each subject</p>
+
+    <!-- 5 fixed mark inputs -->
+    <div id="marks-list">
+      <div class="mark-row">
+        <label>Subject 1</label>
+        <input type="number" class="mark-input" placeholder="0 – 100" min="0" max="100" />
+      </div>
+      <div class="mark-row">
+        <label>Subject 2</label>
+        <input type="number" class="mark-input" placeholder="0 – 100" min="0" max="100" />
+      </div>
+      <div class="mark-row">
+        <label>Subject 3</label>
+        <input type="number" class="mark-input" placeholder="0 – 100" min="0" max="100" />
+      </div>
+      <div class="mark-row">
+        <label>Subject 4</label>
+        <input type="number" class="mark-input" placeholder="0 – 100" min="0" max="100" />
+      </div>
+      <div class="mark-row">
+        <label>Subject 5</label>
+        <input type="number" class="mark-input" placeholder="0 – 100" min="0" max="100" />
+      </div>
+    </div>
+
+    <button id="calc-btn" onclick="calculate()">Calculate</button>
+
+    <!-- Result box, hidden until Calculate is clicked -->
+    <div id="result-box" class="hidden">
+      <h2>Result</h2>
+
+      <div class="result-item">
+        <span class="label">Total Marks</span>
+        <span id="total" class="value">—</span>
+      </div>
+
+      <div class="result-item">
+        <span class="label">Average</span>
+        <span id="average" class="value">—</span>
+      </div>
+
+      <div class="result-item">
+        <span class="label">Grade</span>
+        <span id="grade" class="value grade-badge">—</span>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
